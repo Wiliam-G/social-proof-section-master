@@ -1,12 +1,13 @@
 body {
   background-color: white;
-  max-width: 1440px;
+  width: 1440px;
+  margin-left: 10%;
   font-size: 15px;
   font-family: "Spartan", sans-serif;
 }
 .presentation h1 {
   font-size: 48px;
-  max-width: 90%;
+  width: 90%;
   color: hsl(300, 43%, 22%);
   margin-bottom: 0px;
   font-weight: bolder;
@@ -15,26 +16,61 @@ body {
 
 .presentation p {
   line-height: 2;
+  margin-top: 5px;
 }
 .presentation {
-  max-width: 450px;
+  width: 450px;
   margin-top: 200px;
-  margin-left: 150px;
+  margin-left: 75px;
   color: hsl(303, 10%, 53%);
 }
 
 .rating {
-  position: absolute;
-  right: 200px;
-  top: 200px;
-  width: 300px;
+  margin-left: 760px;
+  margin-top: -270px;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  color: hsl(300, 43%, 22%);
+  font-weight: 700;
 }
 
 .rating p {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
   background-color: hsl(300, 24%, 96%);
-  line-height: 2;
+  width: 80%;
+  line-height: 3;
   text-align: center;
-  color: hsl(300, 43%, 22%);
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+.star {
+  width: 20px;
+  margin-top: 0;
+  margin-right: 2px;
+  margin-left: 2px;
+}
+
+.rating span {
+  margin-left: 5%;
+  margin-right: 35px;
+  position: relative;
+  margin-top: 5px;
+}
+
+.ratting #rate-1 {
+  align-self: flex-start;
+}
+
+.rating #rate-2 {
+  align-self: center;
+}
+
+.rating #rate-3 {
+  align-self: flex-end;
 }
 
 .checked {
@@ -43,43 +79,92 @@ body {
 
 .testimonials {
   margin-top: 100px;
-  margin-left: 150px;
-  margin-right: 100px;
+  margin-left: 70px;
+  margin-right: 70px;
   display: flex;
   flex-direction: row;
   margin-bottom: 30px;
+  font-weight: 500;
 }
 
-.testimonials div {
-  width: 28%;
-  line-height: 2;
+.testimonials header {
+  position: relative;
+  display: inline;
+}
+
+.testimonials .user {
+  position: relative;
+  margin-left: 90px;
+  margin-top: -80px;
+  line-height: unset;
+}
+
+img {
+  border-radius: 50%;
+  width: 50px;
+  margin-top: 50px;
+  margin-left: 20px;
+}
+
+.testimonials h4 {
+  margin-bottom: auto;
+}
+
+.verified {
+  margin-top: 5px;
+  font-weight: 500;
+  color: hsl(333, 80%, 67%);
+  line-height: 0.5;
+}
+
+.testimonials-text {
+  margin-top: 40px;
+  margin-left: 21px;
+  margin-right: 21px;
+}
+
+.testimonials #left {
+  margin-bottom: 40px;
+  width: 375px;
   background-color: hsl(300, 43%, 22%);
   color: hsl(300, 24%, 96%);
+  line-height: 2;
   text-align: left;
-  /* position: relative; */
-  /* display: inline-block; */
   border-radius: 10px;
-  margin-right: 30px;
+  margin-right: 40px;
+  margin-left: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+}
+
+.testimonials #middle {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 375px;
+  background-color: hsl(300, 43%, 22%);
+  color: hsl(300, 24%, 96%);
+  line-height: 2;
+  text-align: left;
+  border-radius: 10px;
+  margin-right: 40px;
   padding-left: 20px;
   padding-right: 20px;
 }
 
-.testimonials #left {
-  margin-bottom: 60px;
-}
-
-.testimonials #middle {
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
 .testimonials #right {
-  margin-top: 60px;
+  margin-top: 40px;
   margin-bottom: 0px;
+  width: 375px;
+  background-color: hsl(300, 43%, 22%);
+  color: hsl(300, 24%, 96%);
+  line-height: 2;
+  text-align: left;
+  border-radius: 10px;
 }
 
 footer {
   height: 50px;
-  background-color: darkgray;
   display: flex;
   flex-direction: row;
   justify-content: center;
